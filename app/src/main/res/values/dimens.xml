@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="news_top_morgin">3dp</dimen>
+    <dimen name="news_card_morgin">3dp</dimen>
+    <dimen name="list_item_artile_vertical_margin">4dp</dimen>
+    <dimen name="news_heding_recly">22sp</dimen>
+    <dimen name="news_cntn_recly">18sp</dimen>
+    <dimen name="news_date_recly">10sp</dimen>
+    <dimen name="news_reptr_recly">10sp</dimen>
+    <dimen name="news_reptr_bottommargin_">60dp</dimen>
+    <dimen name="news_reptr_bottommargin">60dp</dimen>
+
+
+    <dimen name="news_botton_padding">2dp</dimen>
+
+    <dimen name="news_card_imageview_hight">210dp</dimen>
+    <dimen name="shoplist_card_imageview_hight">150dp</dimen>
+    <dimen name="shoplist_card_imageview_width">140dp</dimen>
+
+    <dimen name="ntwk_info_heding">24sp</dimen>
+    <dimen name="ntwk_info_exp">16sp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <!-- THE HOME PAGE MAIN EVENTS IMAGE DESIGN -->
+    <dimen name="main_event_card_morgin">3dp</dimen>
+
+    <!--home page layer 1 -->
+    <!--linear layout 1 -->
+
+    <dimen name="layer1_lin_top">2dp</dimen>
+    <dimen name="layer1_lin_bot">2dp</dimen>
+    <dimen name="layer1_lin_right">2dp</dimen>
+    <dimen name="layer1_lin_left">2dp</dimen>
+
+    <!--linear layout 1 -->
+    <dimen name="layer1_lin2_top">2dp</dimen>
+    <dimen name="layer1_lin2_bot">2dp</dimen>
+    <dimen name="layer1_lin2_right">2dp</dimen>
+    <dimen name="layer1_lin2_left">1dp</dimen>
+
+    <!-- Button dimentions -->
+
+    <dimen name="layer1_btn_width">80dp</dimen>
+    <dimen name="layer1_btn_hight">80dp</dimen>
+
+
+    <!--home page layer 2 -->
+    <!--
+     HORIZANTAL SCROLLER VIEW  -->
+    <!--<dimen name="layer1_hrxntscrlview_width">match_parent</dimen>-->
+    <dimen name="layer1_hrxntscrlview_height">180dp</dimen>
+
+
+    <!-- LAYER 3 HOME   AND SERVICES -->
+    <!--linear layout 1 -->
+    <dimen name="layer3_lin_top">2dp</dimen>
+    <dimen name="layer3_lin_bot">2dp</dimen>
+    <dimen name="layer3_lin_right">2dp</dimen>
+    <dimen name="layer3_lin_left">2dp</dimen>
+
+
+    <!--linear layout 12 -->
+    <dimen name="layer3_lin31_top">2dp</dimen>
+    <dimen name="layer3_lin31_bot">2dp</dimen>
+    <dimen name="layer3_lin31_right">24dp</dimen>
+    <dimen name="layer3_lin31_left">24dp</dimen>
+
+    <dimen name="layer3_linbtn_top">1dp</dimen>
+    <dimen name="layer3_linbtn_bot">1dp</dimen>
+    <dimen name="layer3_linbtn_right">0.5dp</dimen>
+    <dimen name="layer3_linbtn_left">0.5dp</dimen>
+    <dimen name="layer3_linbtnflast_right">1dp</dimen>
+    <dimen name="layer3_linbtnfist_left">1dp</dimen>
+    <dimen name="layer3_linbtn_mrg">2dp</dimen>
+    <dimen name="layer3_linbtn_pdin">2dp</dimen>
+
+
+    <dimen name="layer3_txxtv_marginTop">8dp</dimen>
+    <dimen name="layer3_txxtv_marginbot">2dp</dimen>
+    <dimen name="layer3_txxtv_marginright">2dp</dimen>
+    <dimen name="layer3_txxtv_marginleft">2dp</dimen>
+
+    <!-- <dimen name="layer3_txxtv_width">match_parent</dimen>-->
+    <dimen name="layer3_txxtv_height">24dp</dimen>
+    <dimen name="layer3_txxtv_size">12sp</dimen>
+
+    <dimen name="layer3_txt_bnt31">9sp</dimen>
+
+
+    <!-- LAYER 4 HOME   AND SERVICES -->
+    <!--linear layout 1 -->
+    <dimen name="layer4_btn_width">80dp</dimen>
+    <dimen name="layer4_btn_hight">60dp</dimen>
+    <dimen name="layer4_lin1_top">2dp</dimen>
+    <dimen name="layer4_lin1_bot">2dp</dimen>
+
+    <!-- LAYER 8 HOME   AND SERVICES -->
+    <!--linear layout 1 -->
+    <dimen name="layer8_hrxntscrlview_height">200dp</dimen>
+
+
+    <!-- SHOP DETAILS VIEW -->
+    <!--linear layout 1 -->
+    <dimen name="shop_mainimageview_height">200dp</dimen>
+    <dimen name="shop_mainimageview_cardElevation">10dp</dimen>
+    <dimen name="shop_mainimageview_cardCornerRadius">20dp</dimen>
+    <dimen name="shop_mainimageview_layout_margin">2dp</dimen>
+    <dimen name="shop_mainimageview_cardMaxElevation">12dp</dimen>
+
+    <!--opnstatuscardview -->
+    <dimen name="opnstatuscardview_height">20dp</dimen>
+    <dimen name="shop_opnstatuscardview_cardElevation">5dp</dimen>
+    <dimen name="shop_opnstatuscardview_cardCornerRadius">5dp</dimen>
+    <dimen name="shop_opnstatuscardview_layout_margin">2dp</dimen>
+    <dimen name="shop_opnstatuscardview_cardMaxElevation">3dp</dimen>
+
+    <dimen name="shop_callShare_cardMaxElevation">60dp</dimen>
+    <dimen name="shop_btn_cornerRadius">22dp</dimen>
+    <dimen name="shop_btn_layout_width">44dp</dimen>
+    <dimen name="shop_btn_layout_height">44dp</dimen>
+
+    <dimen name="shop_imageslist_layout_width">100dp</dimen>
+    <dimen name="shop_imageslist_layout_height">100dp</dimen>
+    <dimen name="shop_imageslist_rclViewlayout_height">110dp</dimen>
+
+    <dimen name="shop_adress_layout_height">80dp</dimen>
+
+    <dimen name="shop_contact_layout_height">40dp</dimen>
+
+    <dimen name="shop_contenttitle_recly">16sp</dimen>
+    <dimen name="shop_contens_recly">14sp</dimen>
+    <dimen name="shop_image_gallaryview_recly">180dp</dimen>
+
+
+    <dimen name="itemlist_card_imageview_hight">150dp</dimen>
+    <dimen name="itemlist_card_imageview_width">150dp</dimen>
+    <dimen name="itemlist_card_imageview_hight1">145dp</dimen>
+    <dimen name="itemlist_card_imageview_width1">145dp</dimen>
+
+    <dimen name="itemlinlist_card_imageview_hight">200dp</dimen>
+
+    <dimen name="item_mrp_recly">16sp</dimen>
+    <dimen name="item_price_recly">18sp</dimen>
+    <dimen name="btn_itemshop_hight">40dp</dimen>
+
+    <dimen name="btn_itemshop_hight1">60dp</dimen>
+
+    <dimen name="item_mainimageview_height">450dp</dimen>
+
+    <!--daily items recycle view  -->
+    <dimen name="shoplist_card_dailyitems_lin_hight">110dp</dimen>
+    <dimen name="shoplist_card_dailyitems_imageview_hight">110dp</dimen>
+    <dimen name="onlinedailyitems_heding_recly">14sp</dimen>
+    <dimen name="onlinedailyitems_shopname_recly">10sp</dimen>
+    <dimen name="onlinedailyitems_via_recly">8sp</dimen>
+    <dimen name="onlinedailyitems_price_recly">8sp</dimen>
+    <dimen name="btn_dailyitemshop_hight">20dp</dimen>
+    <dimen name="btn_dailyitemshop_card_morgin1">1dp</dimen>
+
+
+    <!--HOME NEW RECYCLE VIEW-->
+    <dimen name="news_card_imageview_hight1">120dp</dimen>
+    <dimen name="home_news_card_width">300dp</dimen>
+    <dimen name="home_news_heding_recly">14sp</dimen>
+    <dimen name="home_news_card_horizantal_hight">240dp</dimen>
+    <dimen name="home_news_txt_hieght">40dp</dimen>
+
+
+</resources>

@@ -2,4 +2,89 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorsplash">#FFFFFFFF</color>
+    <color name="white1">#FFFFFF</color>
+    <color name="primary">#E43F3F</color>
+    <color name="iron">#494545</color>
+    <color name="colorTextLogin">#eaa110</color>
+    <color name="coloractivity_background">#FFFFFF</color>
+
+
+    <color name="homeBTN_press">#FBE59E</color>
+    <color name="homeBTN_non">#FFFFFF</color>
+    <color name="homeBTN_txt_color">#232020</color>
+
+    <color name="btn2_non">#039BE5</color>
+    <color name="btn2_press">#FBE59E</color>
+    <color name="btn2_txt_color">#fff</color>
+
+    <color name="btn3_non">#f0f5f4</color>
+    <color name="btn3_press">#FBE59E</color>
+    <color name="btn3_txt_color">#039BE5</color>
+    <color name="color_white">#FFFFFF</color>
+
+    //button collor
+    <color name="btn1_non">#26C6DA</color>
+    <color name="btn1_press">#FBE59E</color>
+    <color name="btn1_txt_color">#fff</color>
+
+    //news text colors
+    <color name="news_heding_recly">#494545</color>
+    <color name="news_date_recly">#605A36</color>
+    <color name="news_reptr_recly">#D3CECE</color>
+    //Newwrok info
+    <color name="ntwk_info_heding">#494545</color>
+    <color name="ntwk_info_exp">#928A6C</color>
+
+
+    //layer 1 linear lay
+    <color name="home_layer1_line">#f4eeee</color>
+
+
+
+    //
+    <color name="layer3_txtv1_color">#121212</color>
+    <color name="home_layer3_mainlin31">#D3C0C0</color>
+    <color name="home_layer3_mainbtn31">#FFF</color>
+
+
+    //layer 4 linear lay
+    <color name="home_layer4_line">#FFF</color>
+    <color name="layer4_homeBTN1_normal">#4B6587</color>
+    <color name="layer4_homeBTN12_normal">#911F27</color>
+    <color name="layer4_homeBTN_txtcolor">#FFF</color>
+
+    <color name="shop_btn_call">#C42E2D2D</color>
+
+    <color name="linear_laout_brdr">#939191</color>
+
+    <color name="shop_contenttitle_recly">#383535</color>
+    <color name="shop_content_recly">#4A3A3A</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="add_item_normal">#FFF307</color>
+    <color name="item_price_recly">#101010</color>
+    <color name="txtv_about_item_heading">#272121</color>
+
+    <color name="online_daily_owner_recly">#272121</color>
+    <color name="online_daily_mrp_recly">#121111</color>
+    <color name="online_daily_price_recly">#D3CECE</color>
+    <color name="button_best_deals">#FFD556</color>
 </resources>

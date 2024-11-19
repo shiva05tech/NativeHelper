@@ -1,0 +1,1413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- home page LAYER1  layer -->
+        <LinearLayout
+
+            android:paddingLeft="@dimen/layer1_lin_left"
+            android:paddingRight="@dimen/layer1_lin_right"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/home_layer1_line">
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layer1_lin2_bot"
+                android:layout_marginTop="@dimen/layer1_lin2_top"
+                android:layout_weight="5"
+                android:gravity="center_horizontal"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layer1_lin2_left"
+                    android:layout_marginRight="@dimen/layer1_lin2_right"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+
+                        android:id="@+id/btn_layer1_bnt1"
+                        android:layout_width="@dimen/layer1_btn_width"
+                        android:layout_height="@dimen/layer1_btn_hight"
+                        android:scaleType="center"
+                        android:drawablePadding="2dp"
+                        android:drawableTop="@drawable/ic_medicals"
+                        android:text="@string/layer1_txt_bnt1"
+                        android:layout_gravity="center"
+
+
+
+                        android:theme="@style/HomeButtons" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layer1_lin2_left"
+                    android:layout_marginRight="@dimen/layer1_lin2_right"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_layer1_bnt2"
+                        android:layout_width="@dimen/layer1_btn_width"
+                        android:layout_height="@dimen/layer1_btn_hight"
+                        android:drawableTop="@drawable/ic_market"
+                        android:text="@string/layer1_txt_bnt2"
+
+                        android:theme="@style/HomeButtons" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layer1_lin2_left"
+                    android:layout_marginRight="@dimen/layer1_lin2_right"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_layer1_bnt3"
+                        android:layout_width="@dimen/layer1_btn_width"
+                        android:layout_height="@dimen/layer1_btn_hight"
+                        android:drawableTop="@drawable/ic_bus"
+                        android:text="@string/layer1_txt_bnt3"
+                        android:theme="@style/HomeButtons" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layer1_lin2_left"
+                    android:layout_marginRight="@dimen/layer1_lin2_right"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_layer1_bnt4"
+                        android:layout_width="@dimen/layer1_btn_width"
+                        android:layout_height="@dimen/layer1_btn_hight"
+                        android:drawableTop="@drawable/ic_temple"
+                        android:text="@string/layer1_txt_bnt4"
+                        android:theme="@style/HomeButtons" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layer1_lin2_left"
+                    android:layout_marginRight="@dimen/layer1_lin2_right"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_layer1_bnt5"
+                        android:layout_width="@dimen/layer1_btn_width"
+                        android:layout_height="@dimen/layer1_btn_hight"
+                        android:drawableTop="@drawable/ic_movies"
+                        android:text="@string/layer1_txt_bnt5"
+                        android:theme="@style/HomeButtons" />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <!--   <TextView
+                   android:textStyle="bold"
+                   android:layout_marginTop="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="left"
+                   android:text="BROWSE JOBS BY ROLE"
+                   android:layout_marginBottom="5dp"
+                   android:textColor="#000"/>-->
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:layout_margin="@dimen/main_event_card_morgin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layer1_hrxntscrlview_height"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:paddingTop="@dimen/news_card_morgin"
+                android:layout_marginTop="@dimen/news_card_morgin"
+                android:id="@+id/reclyview_layer2_events_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:paddingLeft="@dimen/layer3_lin_left"
+            android:paddingRight="@dimen/layer3_lin_right"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layer3_lin_bot"
+            android:layout_marginTop="@dimen/layer3_lin_top"
+            android:gravity="center"
+            android:background="@color/home_layer3_mainbtn31"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="@dimen/layer3_lin31_left"
+                android:layout_marginRight="@dimen/layer3_lin31_right"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/layer3_txxtv_marginTop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layer3_txxtv_height"
+                android:gravity="left"
+                android:textSize="@dimen/layer3_txxtv_size"
+                android:text="@string/layer5_maintxtv_heading"
+                android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                android:textColor="@color/layer3_txtv1_color"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_marginTop="@dimen/layer3_lin31_top"
+                android:layout_marginBottom="@dimen/layer3_lin31_bot"
+                android:layout_marginLeft="@dimen/layer3_lin31_left"
+                android:layout_marginRight="@dimen/layer3_lin31_right"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="bottom"
+                android:background="@color/home_layer3_mainlin31"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_margin="@dimen/layer3_linbtn_mrg"
+                    android:padding="@dimen/layer3_linbtn_pdin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layer3_linbtn_top"
+                    android:layout_marginBottom="@dimen/layer3_linbtn_bot"
+                    android:layout_marginLeft="@dimen/layer3_linbtn_left"
+                    android:layout_marginRight="@dimen/layer3_linbtnflast_right"
+                    android:layout_weight="1"
+                    android:theme="@style/HomeButtons_layer3"
+                    android:background="@color/home_layer3_mainbtn31"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/btn_layer5_bnt1_fdrt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layer1_btn_hight"
+                        android:drawableTop="@drawable/ic_dashboard_black_24dp"
+                        android:src="@mipmap/ic_restorent"
+                        android:text="@string/layer3_txt_bnt31"
+                        android:scaleType="fitXY"
+                        android:adjustViewBounds="true"
+
+                        />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layer3_txxtv_height"
+                        android:gravity="center"
+                        android:textSize="@dimen/layer3_txt_bnt31"
+                        android:text="@string/layer3_txt_bnt31"
+                        android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                        android:textColor="@color/layer3_txtv1_color"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="@dimen/layer3_linbtn_mrg"
+                    android:padding="@dimen/layer3_linbtn_pdin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layer3_linbtn_top"
+                    android:layout_marginBottom="@dimen/layer3_linbtn_bot"
+                    android:layout_marginLeft="@dimen/layer3_linbtn_left"
+                    android:layout_marginRight="@dimen/layer3_linbtn_right"
+
+                    android:layout_weight="1"
+                    android:theme="@style/HomeButtons_layer3"
+                    android:background="@color/home_layer3_mainbtn31"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/btn_layer5_bnt2_agrp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layer1_btn_hight"
+                        android:text="@string/layer3_txt_bnt31"
+                        android:src="@mipmap/ic_farming"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+
+                        />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layer3_txxtv_height"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:textSize="@dimen/layer3_txt_bnt31"
+                        android:text="@string/layer3_txt_bnt32"
+                        android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                        android:textColor="@color/layer3_txtv1_color"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="@dimen/layer3_linbtn_mrg"
+                    android:padding="@dimen/layer3_linbtn_pdin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layer3_linbtn_top"
+                    android:layout_marginBottom="@dimen/layer3_linbtn_bot"
+                    android:layout_marginLeft="@dimen/layer3_linbtn_left"
+                    android:layout_marginRight="@dimen/layer3_linbtn_right"
+
+                    android:layout_weight="1"
+                    android:theme="@style/HomeButtons_layer3"
+                    android:background="@color/home_layer3_mainbtn31"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/btn_layer5_bnt3_grcr"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layer1_btn_hight"
+                        android:src="@mipmap/ic_groceries"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+
+                        />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layer3_txxtv_height"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:textSize="@dimen/layer3_txt_bnt31"
+                        android:text="@string/layer3_txt_bnt33"
+                        android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                        android:textColor="@color/layer3_txtv1_color"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_marginTop="@dimen/layer3_lin31_top"
+                android:layout_marginBottom="@dimen/layer3_lin31_bot"
+                android:layout_marginLeft="@dimen/layer3_lin31_left"
+                android:layout_marginRight="@dimen/layer3_lin31_right"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="bottom"
+                android:background="@color/home_layer3_mainlin31"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_margin="@dimen/layer3_linbtn_mrg"
+                    android:padding="@dimen/layer3_linbtn_pdin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layer3_linbtn_top"
+                    android:layout_marginBottom="@dimen/layer3_linbtn_bot"
+                    android:layout_marginLeft="@dimen/layer3_linbtn_left"
+                    android:layout_marginRight="@dimen/layer3_linbtnflast_right"
+                    android:layout_weight="1"
+                    android:theme="@style/HomeButtons_layer3"
+                    android:background="@color/home_layer3_mainbtn31"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/btn_layer5_bnt4_clts"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layer1_btn_hight"
+                        android:src="@mipmap/ic_clothes"
+                        android:text="@string/layer3_txt_bnt31"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+
+                        />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layer3_txxtv_height"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:textSize="@dimen/layer3_txt_bnt31"
+                        android:text="@string/layer3_txt_bnt34"
+                        android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                        android:textColor="@color/layer3_txtv1_color"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="@dimen/layer3_linbtn_mrg"
+                    android:padding="@dimen/layer3_linbtn_pdin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layer3_linbtn_top"
+                    android:layout_marginBottom="@dimen/layer3_linbtn_bot"
+                    android:layout_marginLeft="@dimen/layer3_linbtn_left"
+                    android:layout_marginRight="@dimen/layer3_linbtn_right"
+
+                    android:layout_weight="1"
+                    android:theme="@style/HomeButtons_layer3"
+                    android:background="@color/home_layer3_mainbtn31"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/btn_layer5_bnt5_hmapl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layer1_btn_hight"
+                        android:src="@mipmap/ic_homeappliances"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+
+                        />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layer3_txxtv_height"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:textSize="@dimen/layer3_txt_bnt31"
+                        android:text="@string/layer3_txt_bnt35"
+                        android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                        android:textColor="@color/layer3_txtv1_color"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="@dimen/layer3_linbtn_mrg"
+                    android:padding="@dimen/layer3_linbtn_pdin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layer3_linbtn_top"
+                    android:layout_marginBottom="@dimen/layer3_linbtn_bot"
+                    android:layout_marginLeft="@dimen/layer3_linbtn_left"
+                    android:layout_marginRight="@dimen/layer3_linbtn_right"
+
+                    android:layout_weight="1"
+                    android:theme="@style/HomeButtons_layer3"
+                    android:background="@color/home_layer3_mainbtn31"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/btn_layer5_bnt6_mblse"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layer1_btn_hight"
+                        android:src="@mipmap/ic_electronics"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+
+                        />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layer3_txxtv_height"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:textSize="@dimen/layer3_txt_bnt31"
+                        android:text="@string/layer3_txt_bnt36"
+                        android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                        android:textColor="@color/layer3_txtv1_color"
+                        />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_marginTop="@dimen/layer3_lin31_top"
+                android:layout_marginBottom="@dimen/layer3_lin31_bot"
+                android:layout_marginLeft="@dimen/layer3_lin31_left"
+                android:layout_marginRight="@dimen/layer3_lin31_right"
+                android:maxLines="2"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="bottom"
+                android:background="@color/home_layer3_mainlin31"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_margin="@dimen/layer3_linbtn_mrg"
+                    android:padding="@dimen/layer3_linbtn_pdin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layer3_linbtn_top"
+                    android:layout_marginBottom="@dimen/layer3_linbtn_bot"
+                    android:layout_marginLeft="@dimen/layer3_linbtn_left"
+                    android:layout_marginRight="@dimen/layer3_linbtnflast_right"
+                    android:layout_weight="1"
+                    android:theme="@style/HomeButtons_layer3"
+                    android:background="@color/home_layer3_mainbtn31"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/btn_layer5_bnt7_wdftr"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layer1_btn_hight"
+                        android:src="@mipmap/ic_woods"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+
+                        />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layer3_txxtv_height"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:textSize="@dimen/layer3_txt_bnt31"
+                        android:text="@string/layer3_txt_bnt37"
+                        android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                        android:textColor="@color/layer3_txtv1_color"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="@dimen/layer3_linbtn_mrg"
+                    android:padding="@dimen/layer3_linbtn_pdin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layer3_linbtn_top"
+                    android:layout_marginBottom="@dimen/layer3_linbtn_bot"
+                    android:layout_marginLeft="@dimen/layer3_linbtn_left"
+                    android:layout_marginRight="@dimen/layer3_linbtn_right"
+
+                    android:layout_weight="1"
+                    android:theme="@style/HomeButtons_layer3"
+                    android:background="@color/home_layer3_mainbtn31"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/btn_layer5_bnt8_gldjw"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layer1_btn_hight"
+                        android:src="@mipmap/ic_jewellary"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+
+                        />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layer3_txxtv_height"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:textSize="@dimen/layer3_txt_bnt31"
+                        android:text="@string/layer3_txt_bnt38"
+                        android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                        android:textColor="@color/layer3_txtv1_color"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="@dimen/layer3_linbtn_mrg"
+                    android:padding="@dimen/layer3_linbtn_pdin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layer3_linbtn_top"
+                    android:layout_marginBottom="@dimen/layer3_linbtn_bot"
+                    android:layout_marginLeft="@dimen/layer3_linbtn_left"
+                    android:layout_marginRight="@dimen/layer3_linbtn_right"
+
+                    android:layout_weight="1"
+                    android:theme="@style/HomeButtons_layer3"
+                    android:background="@color/home_layer3_mainbtn31"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/btn_layer5_bnt9_grnts"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layer1_btn_hight"
+                        android:src="@mipmap/ic_marbals"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+
+                        />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layer3_txxtv_height"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:textSize="@dimen/layer3_txt_bnt31"
+                        android:text="@string/layer3_txt_bnt39"
+                        android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                        android:textColor="@color/layer3_txtv1_color"
+                        />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:layout_margin="@dimen/main_event_card_morgin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/news_card_morgin"
+                android:layout_marginTop="@dimen/news_card_morgin"
+                android:id="@+id/reclyview_layer8_newsviews"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_news_card_horizantal_hight"
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+
+            android:paddingLeft="@dimen/layer3_lin_left"
+            android:paddingRight="@dimen/layer3_lin_right"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/home_layer3_mainlin31">
+
+
+            <LinearLayout
+
+                android:paddingLeft="@dimen/layer3_lin_left"
+                android:paddingRight="@dimen/layer3_lin_right"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/home_layer3_mainlin31">
+
+
+
+
+                <LinearLayout
+                    android:paddingLeft="@dimen/layer3_lin_left"
+                    android:paddingRight="@dimen/layer3_lin_right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/layer3_lin_bot"
+                    android:layout_marginTop="@dimen/layer3_lin_top"
+                    android:gravity="center"
+                    android:background="@color/home_layer3_mainbtn31"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/layer3_lin31_left"
+                        android:layout_marginRight="@dimen/layer3_lin31_right"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/layer3_txxtv_marginTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layer3_txxtv_height"
+                        android:gravity="left"
+                        android:textSize="@dimen/layer3_txxtv_size"
+                        android:text="@string/srvc_txtV_TXT31"
+                        android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                        android:textColor="@color/layer3_txtv1_color"/>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_marginTop="@dimen/layer3_lin31_top"
+                        android:layout_marginBottom="@dimen/layer3_lin31_bot"
+                        android:layout_marginLeft="@dimen/layer3_lin31_left"
+                        android:layout_marginRight="@dimen/layer3_lin31_right"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="bottom"
+                        android:background="@color/home_layer3_mainlin31"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_margin="@dimen/layer3_linbtn_mrg"
+                            android:padding="@dimen/layer3_linbtn_pdin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/layer3_linbtn_top"
+                            android:layout_marginBottom="@dimen/layer3_linbtn_bot"
+                            android:layout_marginLeft="@dimen/layer3_linbtn_left"
+                            android:layout_marginRight="@dimen/layer3_linbtnflast_right"
+                            android:layout_weight="1"
+                            android:theme="@style/HomeButtons_layer3"
+                            android:background="@color/home_layer3_mainbtn31"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatImageButton
+                                android:id="@+id/srvc_txt_bnt1_edct"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/layer1_btn_hight"
+                                android:src="@mipmap/ic_education"
+
+
+                                />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/layer3_txxtv_height"
+                                android:gravity="center"
+                                android:textSize="@dimen/layer3_txt_bnt31"
+                                android:text="@string/srvc_txt_bnt1"
+                                android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                                android:textColor="@color/layer3_txtv1_color"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_margin="@dimen/layer3_linbtn_mrg"
+                            android:padding="@dimen/layer3_linbtn_pdin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/layer3_linbtn_top"
+                            android:layout_marginBottom="@dimen/layer3_linbtn_bot"
+                            android:layout_marginLeft="@dimen/layer3_linbtn_left"
+                            android:layout_marginRight="@dimen/layer3_linbtn_right"
+
+                            android:layout_weight="1"
+                            android:theme="@style/HomeButtons_layer3"
+                            android:background="@color/home_layer3_mainbtn31"
+                            android:orientation="vertical">
+                            <androidx.appcompat.widget.AppCompatImageButton
+                                android:id="@+id/srvc_txt_bnt2_cnltnt"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/layer1_btn_hight"
+                                android:src="@mipmap/ic_consulting"
+
+                                />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/layer3_txxtv_height"
+                                android:gravity="center"
+                                android:textSize="@dimen/layer3_txt_bnt31"
+                                android:text="@string/srvc_txt_bnt2"
+                                android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                                android:textColor="@color/layer3_txtv1_color"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_margin="@dimen/layer3_linbtn_mrg"
+                            android:padding="@dimen/layer3_linbtn_pdin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/layer3_linbtn_top"
+                            android:layout_marginBottom="@dimen/layer3_linbtn_bot"
+                            android:layout_marginLeft="@dimen/layer3_linbtn_left"
+                            android:layout_marginRight="@dimen/layer3_linbtn_right"
+
+                            android:layout_weight="1"
+                            android:theme="@style/HomeButtons_layer3"
+                            android:background="@color/home_layer3_mainbtn31"
+                            android:orientation="vertical">
+                            <androidx.appcompat.widget.AppCompatImageButton
+                                android:id="@+id/srvc_txt_bnt3_trvls"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/layer1_btn_hight"
+                                android:src="@mipmap/ic_travels"
+
+                                />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/layer3_txxtv_height"
+                                android:gravity="center"
+                                android:textSize="@dimen/layer3_txt_bnt31"
+                                android:text="@string/srvc_txt_bnt3"
+                                android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                                android:textColor="@color/layer3_txtv1_color"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_margin="@dimen/layer3_linbtn_mrg"
+                            android:padding="@dimen/layer3_linbtn_pdin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/layer3_linbtn_top"
+                            android:layout_marginBottom="@dimen/layer3_linbtn_bot"
+                            android:layout_marginLeft="@dimen/layer3_linbtn_left"
+                            android:layout_marginRight="@dimen/layer3_linbtn_right"
+
+                            android:layout_weight="1"
+                            android:theme="@style/HomeButtons_layer3"
+                            android:background="@color/home_layer3_mainbtn31"
+                            android:orientation="vertical">
+                            <androidx.appcompat.widget.AppCompatImageButton
+                                android:id="@+id/srvc_txt_bnt4_ctrn"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/layer1_btn_hight"
+                                android:src="@mipmap/ic_catering"
+
+                                />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/layer3_txxtv_height"
+                                android:gravity="center"
+                                android:textSize="@dimen/layer3_txt_bnt31"
+                                android:text="@string/srvc_txt_bnt4"
+                                android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                                android:textColor="@color/layer3_txtv1_color"
+                                />
+                        </LinearLayout>
+
+
+
+
+
+                        <!--<LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/btn_layer3_bnt34"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/layer1_btn_hight"
+                                android:drawableTop="@drawable/ic_dashboard_black_24dp"
+                                android:text="@string/layer3_txt_bnt34"
+                                android:theme="@style/HomeButtons_layer3" />
+                        </LinearLayout>-->
+
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_marginTop="@dimen/layer3_lin31_top"
+                        android:layout_marginBottom="@dimen/layer3_lin31_bot"
+                        android:layout_marginLeft="@dimen/layer3_lin31_left"
+                        android:layout_marginRight="@dimen/layer3_lin31_right"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="bottom"
+                        android:background="@color/home_layer3_mainlin31"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_margin="@dimen/layer3_linbtn_mrg"
+                            android:padding="@dimen/layer3_linbtn_pdin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/layer3_linbtn_top"
+                            android:layout_marginBottom="@dimen/layer3_linbtn_bot"
+                            android:layout_marginLeft="@dimen/layer3_linbtn_left"
+                            android:layout_marginRight="@dimen/layer3_linbtnflast_right"
+                            android:layout_weight="1"
+                            android:theme="@style/HomeButtons_layer3"
+                            android:background="@color/home_layer3_mainbtn31"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatImageButton
+                                android:id="@+id/srvc_txt_bnt5_plmbr"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/layer1_btn_hight"
+                                android:src="@mipmap/ic_plumber"
+
+
+                                />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/layer3_txxtv_height"
+                                android:gravity="center"
+                                android:textSize="@dimen/layer3_txt_bnt31"
+                                android:text="@string/srvc_txt_bnt5"
+                                android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                                android:textColor="@color/layer3_txtv1_color"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_margin="@dimen/layer3_linbtn_mrg"
+                            android:padding="@dimen/layer3_linbtn_pdin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/layer3_linbtn_top"
+                            android:layout_marginBottom="@dimen/layer3_linbtn_bot"
+                            android:layout_marginLeft="@dimen/layer3_linbtn_left"
+                            android:layout_marginRight="@dimen/layer3_linbtn_right"
+
+                            android:layout_weight="1"
+                            android:theme="@style/HomeButtons_layer3"
+                            android:background="@color/home_layer3_mainbtn31"
+                            android:orientation="vertical">
+                            <androidx.appcompat.widget.AppCompatImageButton
+                                android:id="@+id/srvc_txt_bnt6_crpntr"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/layer1_btn_hight"
+                                android:src="@mipmap/ic_carpenter"
+
+                                />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/layer3_txxtv_height"
+                                android:gravity="center"
+                                android:textSize="@dimen/layer3_txt_bnt31"
+                                android:text="@string/srvc_txt_bnt6"
+                                android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                                android:textColor="@color/layer3_txtv1_color"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_margin="@dimen/layer3_linbtn_mrg"
+                            android:padding="@dimen/layer3_linbtn_pdin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/layer3_linbtn_top"
+                            android:layout_marginBottom="@dimen/layer3_linbtn_bot"
+                            android:layout_marginLeft="@dimen/layer3_linbtn_left"
+                            android:layout_marginRight="@dimen/layer3_linbtn_right"
+
+                            android:layout_weight="1"
+                            android:theme="@style/HomeButtons_layer3"
+                            android:background="@color/home_layer3_mainbtn31"
+                            android:orientation="vertical">
+                            <androidx.appcompat.widget.AppCompatImageButton
+                                android:id="@+id/srvc_txt_bnt7_pntr"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/layer1_btn_hight"
+                                android:src="@mipmap/ic_painter"
+
+                                />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/layer3_txxtv_height"
+                                android:gravity="center"
+                                android:textSize="@dimen/layer3_txt_bnt31"
+                                android:text="@string/srvc_txt_bnt7"
+                                android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                                android:textColor="@color/layer3_txtv1_color"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_margin="@dimen/layer3_linbtn_mrg"
+                            android:padding="@dimen/layer3_linbtn_pdin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/layer3_linbtn_top"
+                            android:layout_marginBottom="@dimen/layer3_linbtn_bot"
+                            android:layout_marginLeft="@dimen/layer3_linbtn_left"
+                            android:layout_marginRight="@dimen/layer3_linbtn_right"
+
+                            android:layout_weight="1"
+                            android:theme="@style/HomeButtons_layer3"
+                            android:background="@color/home_layer3_mainbtn31"
+                            android:orientation="vertical">
+                            <androidx.appcompat.widget.AppCompatImageButton
+                                android:id="@+id/srvc_txt_bnt8_elctn"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/layer1_btn_hight"
+                                android:src="@mipmap/ic_electrician"
+
+                                />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/layer3_txxtv_height"
+                                android:gravity="center"
+                                android:textSize="@dimen/layer3_txt_bnt31"
+                                android:text="@string/srvc_txt_bnt8"
+                                android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                                android:textColor="@color/layer3_txtv1_color"
+                                />
+                        </LinearLayout>
+
+
+
+
+
+                        <!--<LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/btn_layer3_bnt34"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/layer1_btn_hight"
+                                android:drawableTop="@drawable/ic_dashboard_black_24dp"
+                                android:text="@string/layer3_txt_bnt34"
+                                android:theme="@style/HomeButtons_layer3" />
+                        </LinearLayout>-->
+
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/layer3_txxtv_marginTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layer3_txxtv_height"
+                        android:gravity="left"
+                        android:textSize="@dimen/layer3_txxtv_size"
+                        android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                        android:textColor="@color/layer3_txtv1_color"/>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            //  LAYER 7AUTOMOBILES
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/home_layer4_line">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/layer3_lin31_top"
+                    android:layout_marginBottom="@dimen/layer3_lin31_bot"
+                    android:layout_marginLeft="@dimen/layer3_lin31_left"
+                    android:layout_marginRight="@dimen/layer3_lin31_right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:layout_marginRight="@dimen/layer3_lin31_right"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/layer3_txxtv_marginTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layer3_txxtv_height"
+                        android:gravity="left"
+                        android:textSize="@dimen/layer3_txxtv_size"
+                        android:text="@string/layer6_maintxtv_heading"
+                        android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                        android:textColor="@color/layer3_txtv1_color"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/layer3_lin31_top"
+                    android:layout_marginBottom="@dimen/layer3_lin31_bot"
+                    android:layout_marginLeft="@dimen/layer3_lin31_left"
+                    android:layout_marginRight="@dimen/layer3_lin31_right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:theme="@style/HomeButtons_layer3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layer1_lin2_left"
+                        android:layout_marginRight="@dimen/layer1_lin2_right"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+
+                            android:id="@+id/layer6_bnt1_hms_rnt"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layer4_btn_hight"
+                            android:drawableLeft="@drawable/ic_homes"
+                            android:text="@string/layer6_btn1_txt"
+                            android:theme="@style/HomeButtons_layer6" />
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/HomeButtons_layer3"
+                        android:layout_marginLeft="@dimen/layer1_lin2_left"
+                        android:layout_marginRight="@dimen/layer1_lin2_right"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/layer6_bnt2_hms_buy"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layer4_btn_hight"
+                            android:drawableLeft="@drawable/ic_homes"
+                            android:text="@string/layer6_btn2_txt"
+                            android:theme="@style/HomeButtons_layer6" />
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+                //start 2*2
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/layer3_lin_left"
+                android:paddingRight="@dimen/layer3_lin_right"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layer3_lin_bot"
+                android:layout_marginTop="@dimen/layer3_lin_top"
+                android:gravity="center"
+                android:background="@color/home_layer3_mainbtn31"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/layer3_lin31_left"
+                    android:layout_marginRight="@dimen/layer3_lin31_right"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/layer3_txxtv_marginTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layer3_txxtv_height"
+                    android:gravity="left"
+                    android:textSize="@dimen/layer3_txxtv_size"
+                    android:text="@string/layer7_maintxtv_heading"
+                    android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                    android:textColor="@color/layer3_txtv1_color"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/layer3_lin31_top"
+                    android:layout_marginBottom="@dimen/layer3_lin31_bot"
+                    android:layout_marginLeft="@dimen/layer3_lin31_left"
+                    android:layout_marginRight="@dimen/layer3_lin31_right"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="bottom"
+                    android:background="@color/home_layer3_mainlin31"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_margin="@dimen/layer3_linbtn_mrg"
+                        android:padding="@dimen/layer3_linbtn_pdin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/layer3_linbtn_top"
+                        android:layout_marginBottom="@dimen/layer3_linbtn_bot"
+                        android:layout_marginLeft="@dimen/layer3_linbtn_left"
+                        android:layout_marginRight="@dimen/layer3_linbtnflast_right"
+                        android:layout_weight="1"
+                        android:theme="@style/HomeButtons_layer3"
+                        android:background="@color/home_layer3_mainbtn31"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/btn_bnt1_bks"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layer1_btn_hight"
+                            android:src="@mipmap/ic_bikes"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+
+                            />
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layer3_txxtv_height"
+                            android:gravity="center"
+                            android:textSize="@dimen/layer3_txt_bnt31"
+                            android:text="@string/layer7_txt_bnt1"
+                            android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                            android:textColor="@color/layer3_txtv1_color"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_margin="@dimen/layer3_linbtn_mrg"
+                        android:padding="@dimen/layer3_linbtn_pdin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/layer3_linbtn_top"
+                        android:layout_marginBottom="@dimen/layer3_linbtn_bot"
+                        android:layout_marginLeft="@dimen/layer3_linbtn_left"
+                        android:layout_marginRight="@dimen/layer3_linbtn_right"
+
+                        android:layout_weight="1"
+                        android:theme="@style/HomeButtons_layer3"
+                        android:background="@color/home_layer3_mainbtn31"
+                        android:orientation="vertical">
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/btn_bnt2_crs"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layer1_btn_hight"
+                            android:src="@mipmap/ic_cars"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+
+                            />
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layer3_txxtv_height"
+                            android:gravity="center"
+                            android:textSize="@dimen/layer3_txt_bnt31"
+                            android:text="@string/layer7_txt_bnt2"
+                            android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                            android:textColor="@color/layer3_txtv1_color"
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+                //start 2*2
+                //  LAYER 6 NEWS AND EVENTS
+
+
+
+                //  LAYER 6 AUTOMOBILES
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layer3_txxtv_height"
+                    android:layout_marginTop="@dimen/layer3_txxtv_marginTop"
+                    android:layout_marginBottom="@dimen/layer3_txxtv_marginbot"
+                    android:gravity="left"
+                    android:textColor="@color/layer3_txtv1_color"
+                    android:textSize="@dimen/layer3_txxtv_size"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            //  LAYER 8 shops
+
+
+
+        </LinearLayout>
+
+        LAYER 8 News
+
+
+        <LinearLayout
+
+
+            android:layout_marginTop="@dimen/layer3_lin31_top"
+            android:layout_marginBottom="@dimen/layer3_lin31_bot"
+            android:layout_marginLeft="@dimen/layer3_lin31_left"
+            android:layout_marginRight="@dimen/layer3_lin31_right"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/home_layer4_line">
+
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layer1_lin2_bot"
+                android:layout_marginTop="@dimen/layer1_lin2_top"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:theme="@style/HomeButtons_layer3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layer1_lin2_left"
+                    android:layout_marginRight="@dimen/layer1_lin2_right"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+
+                        android:id="@+id/btn_layer4_bnt1_news"
+                        android:layout_width="match_parent"
+                        android:padding="20dp"
+                        android:layout_height="@dimen/layer4_btn_hight"
+                        android:drawableLeft="@drawable/ic_newspaper"
+                        android:text="@string/layer4_btn1_txt"
+                        android:theme="@style/HomeButtons_layer41" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/HomeButtons_layer3"
+                    android:layout_marginLeft="@dimen/layer1_lin2_left"
+                    android:layout_marginRight="@dimen/layer1_lin2_right"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:padding="20dp"
+                        android:id="@+id/btn_layer4_bnt2_events"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layer4_btn_hight"
+                        android:drawableLeft="@drawable/ic_baseline_event_24"
+                        android:text="@string/layer4_btn2_txt"
+                        android:theme="@style/HomeButtons_layer42" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            //start 2*2
+
+
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="left"
+            android:text=""
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
