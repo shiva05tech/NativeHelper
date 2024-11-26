@@ -3,17 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <fragment
-        android:id="@+id/nav_host_fragment_content_shop_list"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:defaultNavHost="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/nav_graph5" />
+    <LinearLayout
+
+        android:layout_weight="1"
+        android:layout_margin="@dimen/news_card_morgin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/news_reptr_bottommargin_">
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:paddingTop="@dimen/news_card_morgin"
+            android:layout_marginTop="@dimen/news_card_morgin"
+            android:id="@+id/shop_header_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

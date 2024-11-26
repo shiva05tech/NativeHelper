@@ -459,10 +459,10 @@ public class HomeScrollingActivity extends AppCompatActivity {
                             // JSONObject response1 = new JSONObject(response.toString());
                             // JSONObject response1 =  response;
                             String message;
-                            Log.e("test","%%%%%%%%%%%%%%%%%%%%%");
-                            Log.e("test",response.toString());
-                            Log.e("test","%%%%%%%%%%%%%%%%%%%%%");
-                            Log.e("test","44444444");
+                            Log.e("test1","%%%%%%%%%%%%%%%%%%%%%");
+                            Log.e("test1",response.toString());
+                            Log.e("test1","%%%%%%%%%%%%%%%%%%%%%");
+                            Log.e("test1","44444444");
 
 
 
@@ -480,8 +480,14 @@ public class HomeScrollingActivity extends AppCompatActivity {
 
                                     if(response.has("headLines")){
                                         JSONArray jsonHeadLines=response.getJSONArray("headLines");
+                                        Log.e("test1","111");
+
+
+
 
                                         if (jsonHeadLines != null) {
+
+                                            Log.e("test1","222");
                                             for (int k=0;k<jsonHeadLines.length();k++){
                                                 JSONObject jheadline = (JSONObject) jsonHeadLines.get(k);
                                                 NewsHeadline headline=new NewsHeadline();

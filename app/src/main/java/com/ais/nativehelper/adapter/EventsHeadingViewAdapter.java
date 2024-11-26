@@ -73,22 +73,34 @@ public class EventsHeadingViewAdapter  extends RecyclerView.Adapter<EventsHeadin
         Log.e("%&&&&&&&&&&&&&&&&&&&",getDataAdapter1.getImageUrl());
         Log.e("%&&&&&&&&&&&&&&&&&&&",getDataAdapter1.getImageUrl());
         Log.e("%&&&&&&&&&&&&&&&&&&&","2222222244444444444");
+if(getDataAdapter1.getImageUrl()!=null){
+    Picasso pk=getImageLoader(context);
+    pk.load(getDataAdapter1.getImageUrl()).resize(340, 240).into(Viewholder.events_imageView);
+        }
 
-        Picasso pk=getImageLoader(context);
-        pk.load(getDataAdapter1.getImageUrl()).resize(340, 240).into(Viewholder.events_imageView);
+
+
+
+
+
+
+
 
         //Picasso.with(context).load(urlll).resize(340, 240).into(Viewholder.shopImageView);
-      /*  if(getDataAdapter1.getLanguageType().equals("2")){
-            Viewholder.txt_shopName.setTextAppearance(context, R.style.font_news_kannda_heading);
+       if(getDataAdapter1.getLanguageType().equals("2")){
+            Viewholder.txt_eventsName.setTextAppearance(context, R.style.font_news_kannda_heading);
         }
+       else{
+           Viewholder.txt_eventsName.setText(getDataAdapter1.getShopName());
+       }
         Log.e("%&&&&&&&&&&&&&&&&&&&","2222222244444444444");
        Log.e("%&&&&&&&&&&&&&&&&&&&","2222222244444444444");
-        Viewholder.txt_shopName.setText(getDataAdapter1.getShopName());
-        Viewholder.txt_catName.setText(""+getDataAdapter1.getCatName());
-        Viewholder.txt_shopTitle.setText(getDataAdapter1.getShopTitle());
-        Viewholder.txt_ownerName.setText(""+getDataAdapter1.getName());
 
-        Viewholder.txt_shopViews.setText(getDataAdapter1.getView()+" views");*/
+        Viewholder.txt_eventCat.setText(""+getDataAdapter1.getCatName());
+        Viewholder.txt_evenTitle.setText(getDataAdapter1.getShopTitle());
+        Viewholder.txt_eventownerName.setText(""+getDataAdapter1.getName());
+
+        Viewholder.txt_eventViews.setText(getDataAdapter1.getView()+" views");
 
 
 
@@ -105,22 +117,23 @@ public class EventsHeadingViewAdapter  extends RecyclerView.Adapter<EventsHeadin
     class ViewHolder extends RecyclerView.ViewHolder{
 
 
-        /*public TextView txt_shopName;
-        public TextView txt_catName;
-        public TextView  txt_shopTitle;
-        public TextView txt_ownerName;
-        public TextView txt_shopViews;*/
+       public TextView txt_eventsName;
+        public TextView txt_eventCat;
+        public TextView  txt_evenTitle;
+        public TextView txt_eventownerName;
+        public TextView txt_eventViews;
         public ImageView events_imageView;
 
         public ViewHolder(View itemView) {
 
             super(itemView);
 
-            /*txt_shopName = (TextView) itemView.findViewById(R.id.txt_shopName);
-            txt_catName = (TextView) itemView.findViewById(R.id.txt_catName);
-            txt_shopTitle = (TextView) itemView.findViewById(R.id.txt_shopTitle);
-            txt_ownerName = (TextView) itemView.findViewById(R.id.txt_ownerName);
-            txt_shopViews = (TextView) itemView.findViewById(R.id.txt_shopViews);*/
+
+           txt_eventsName = (TextView) itemView.findViewById(R.id.txt_eventsName);
+            txt_eventCat = (TextView) itemView.findViewById(R.id.txt_eventCat);
+            txt_evenTitle = (TextView) itemView.findViewById(R.id.txt_evenTitle);
+            txt_eventViews = (TextView) itemView.findViewById(R.id.txt_eventViews);
+            txt_eventownerName = (TextView) itemView.findViewById(R.id.txt_eventownerName);
 
 
             events_imageView = (ImageView) itemView.findViewById(R.id.events_imageView) ;

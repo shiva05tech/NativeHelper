@@ -20,7 +20,7 @@ import com.squareup.picasso.Picasso;
 import java.util.Iterator;
 import java.util.List;
 
-public class NewsHeadingViewAdapter  extends RecyclerView.Adapter<NewsHeadingViewAdapter.ViewHolder> {
+public class NewsHeadingViewAdapter   extends RecyclerView.Adapter<NewsHeadingViewAdapter.ViewHolder> {
 
     Context context;
     List<NewsHeadline> getDataAdapter;
@@ -39,14 +39,14 @@ public class NewsHeadingViewAdapter  extends RecyclerView.Adapter<NewsHeadingVie
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v;
-                if(GlobalController.NEWS_LIST_RECYCLE_CODE==2)
-                {
-                    v = LayoutInflater.from(parent.getContext()).inflate(R.layout.home_new_recycleview, parent, false);
-                }
-                else
-                {
-                     v = LayoutInflater.from(parent.getContext()).inflate(R.layout.news_list_recycle, parent, false);
-                }
+        if(GlobalController.NEWS_LIST_RECYCLE_CODE==2)
+        {
+            v = LayoutInflater.from(parent.getContext()).inflate(R.layout.home_new_recycleview, parent, false);
+        }
+        else
+        {
+            v = LayoutInflater.from(parent.getContext()).inflate(R.layout.news_list_recycle, parent, false);
+        }
 
 
 
@@ -77,15 +77,18 @@ public class NewsHeadingViewAdapter  extends RecyclerView.Adapter<NewsHeadingVie
                 )
         );*/
 
-       // Viewholder.newsImageView.setImageUrl(getDataAdapter1.getImageUrl(), imageLoader1);
+        // Viewholder.newsImageView.setImageUrl(getDataAdapter1.getImageUrl(), imageLoader1);
         Picasso.with(context).load(getDataAdapter1.getImageUrl()).resize(340, 240).into(Viewholder.newsImageView);
         if(getDataAdapter1.getLanguageType().equals("2")){
             Viewholder.txt_newsheading.setTextAppearance(context, R.style.font_news_kannda_heading);
         }
-        Viewholder.txt_newsheading.setText(getDataAdapter1.getNewsHeading());
-        Viewholder.txt_newsDate.setText(""+getDataAdapter1.getNewscloseDate());
+      Viewholder.txt_newsheading.setText(getDataAdapter1.getNewsHeading());
+       Viewholder.txt_newsDate.setText(""+getDataAdapter1.getNewscloseDate());
 
         Viewholder.txt_newsreporter.setText(getDataAdapter1.getViews()+" views");
+
+
+
 
     }
 
@@ -97,7 +100,7 @@ public class NewsHeadingViewAdapter  extends RecyclerView.Adapter<NewsHeadingVie
 
     class ViewHolder extends RecyclerView.ViewHolder{
 
-              public TextView txt_newsheading;
+        public TextView txt_newsheading;
         public TextView txt_newsDate;
         public TextView  txt_newsreporter;
         public ImageView newsImageView;
