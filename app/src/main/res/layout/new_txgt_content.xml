@@ -11,6 +11,19 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         tools:ignore="MissingConstraints">
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="sans-serif-condensed"-->
+<!--            android:textAppearance="?android:attr/textAppearanceLarge"-->
+<!--            android:text="News Heading"-->
+<!--            android:lineSpacingMultiplier=".75"-->
+<!--            android:textSize="@dimen/news_cntn_recly"-->
+<!--            android:textColor="@color/news_heding_recly"-->
+<!--            android:id="@+id/txt_content"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginLeft="15dp"/>-->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -20,10 +33,9 @@
             android:lineSpacingMultiplier=".75"
             android:textSize="@dimen/news_cntn_recly"
             android:textColor="@color/news_heding_recly"
-            android:id="@+id/txt_content"
+            android:id="@+id/textView_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="15dp"/>
-
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

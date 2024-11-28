@@ -2,9 +2,11 @@ package com.ais.nativehelper.adapter;
 
 
 import android.content.Context;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -63,11 +65,23 @@ public class NewsContentAdapter  extends RecyclerView.Adapter<NewsContentAdapter
 
         // Viewholder.newsImageView.setImageUrl(getDataAdapter1.getImageUrl(), imageLoader1);
         if(languageType.equals("2")){
-            Viewholder.txt_content.setTextAppearance(context, R.style.font_news_kannda_content);
+            Viewholder.webview_content.setTextAppearance(context, R.style.font_news_kannda_content);
+            Viewholder.webview_content.setText(Html.fromHtml(content));
+           // Viewholder.webview_content.loadData("<html><body>"+content+"!</body></html>  "text/html", "UTF-8");",
+           // Viewholder.webview_content.setText(Html.fromHtml(content));
+
         }
-        Viewholder.txt_content.setText(content);
-
-
+        //Viewholder.webview_content.loadData(content, "text/html", "UTF-8",null);
+       /* Viewholder.webview_content.loadData(content, "text/html", "UTF-8");
+        Viewholder.webview_content.requestFocus();
+        Viewholder.webview_content.getSettings().setLightTouchEnabled(true);
+        Viewholder.webview_content.getSettings().setJavaScriptEnabled(true);
+        Viewholder.webview_content.getSettings().setGeolocationEnabled(true);
+        Viewholder.webview_content.setSoundEffectsEnabled(true);
+        Viewholder.webview_content.loadData("<html><body>"+content+"!</body></html>",
+                "text/html", "UTF-8");*/
+        Viewholder.webview_content.setTextAppearance(context, R.style.font_news_kannda_content);
+        Viewholder.webview_content.setText(Html.fromHtml(content));
     }
 
     @Override
@@ -78,14 +92,15 @@ public class NewsContentAdapter  extends RecyclerView.Adapter<NewsContentAdapter
 
     class ViewHolder extends RecyclerView.ViewHolder{
 
-        public TextView txt_content;
+        public TextView webview_content;
 
 
         public ViewHolder(View itemView) {
 
             super(itemView);
 
-            txt_content = (TextView) itemView.findViewById(R.id.txt_content);
+
+            webview_content = (TextView) itemView.findViewById(R.id.textView_content);
 
           /*  img_jobs_experience1= (NetworkImageView) itemView.findViewById(R.id.img_jobs_experience1);
             img_jobs_PayScale1= (NetworkImageView) itemView.findViewById(R.id.img_jobs_PayScale1);

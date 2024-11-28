@@ -28,7 +28,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-condensed"
+
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="News Heading"
                 android:maxLines="2"

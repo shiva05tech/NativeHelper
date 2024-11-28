@@ -334,6 +334,7 @@ public class NewsDetailsActivity extends AppCompatActivity {
                              textView.setTypeface(typeface);*/
                         txt_newsheading.setTextAppearance(context, R.style.font_news_kannda_heading);
                     }
+                    txt_newsheading.setTextAppearance(context, R.style.font_news_kannda_heading);
                     txt_newsheading.setText(newsHeading);
                     txt_newsDate.setText(""+createdDate);
                     txt_newsreporter.setText(userName);

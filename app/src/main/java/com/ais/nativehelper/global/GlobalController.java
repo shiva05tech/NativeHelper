@@ -21,7 +21,7 @@ public class GlobalController extends Application {
     public static String APPUSERID;
     public static String DAPPUSERID="1000000000";
     //public static final String API_URI="http://localhost:8080/";
-    public static final String API_URI="http://192.168.41.33:8080/";
+    public static final String API_URI="http://192.168.137.66:8080/";
 
    // public static final String API_URI="http://103.117.180.14:8080/news/";
     //public static final String API_URI="http://192.168.43.190:9090/";
