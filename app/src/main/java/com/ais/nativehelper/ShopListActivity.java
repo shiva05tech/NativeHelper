@@ -69,7 +69,7 @@ import java.util.Map;
 
 
 
-public class ShopListActivity extends BaseActivity2 {
+public class ShopListActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityShopListBinding binding;

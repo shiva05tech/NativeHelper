@@ -99,18 +99,18 @@ public class GlobalController extends Application {
     public static final String KEY_URLFORNEXTCLASS="URL_CMPLT";
     public static final String KEY_URL_HEALTH="1/1/1/1";
     public static final String KEY_MAINCAT="MAIN_CATEGORY";
-    public static final String KEY_HEALTH_CODE="1";
+    public static final String KEY_HEALTH_CODE="1/1";
 
-    public static final String KEY_URL_MARKET="1/1/1/2";
+    public static final String KEY_URL_MARKET="1/1";
     public static final String KEY_MARKET_CODE="2";
 
-    public static final String KEY_URL_TRANSPORT="1/1/1/3";
+    public static final String KEY_URL_TRANSPORT="1/1";
     public static final String KEY_TRANSPORT_CODE="3";
 
-    public static final String KEY_URL_TEMPLES="1/1/1/4";
+    public static final String KEY_URL_TEMPLES="1/1";
     public static final String KEY_TEMPLES_CODE="4";
 
-    public static final String KEY_URL_MOVIES="1/1/1/5";
+    public static final String KEY_URL_MOVIES="1/1";
     public static final String KEY_MOVIES_CODE="5";
 
 

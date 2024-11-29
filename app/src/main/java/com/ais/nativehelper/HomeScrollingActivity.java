@@ -95,26 +95,6 @@ public class HomeScrollingActivity extends AppCompatActivity {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     private String MESSAGE;
     private String TAG="NEWS";
     private ProgressDialog progressDialog;

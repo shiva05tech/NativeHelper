@@ -61,7 +61,11 @@ public class ShopHeadingViewAdapter  extends RecyclerView.Adapter<ShopHeadingVie
         );*/
 //String urlll="https://valar.in/wp-content/uploads/2019/08/cropped-are-you-gonna-open-new-shop-opening-ceremony.jpg";
         // Viewholder.newsImageView.setImageUrl(getDataAdapter1.getImageUrl(), imageLoader1);
-        Picasso.with(context).load(getDataAdapter1.getImageUrl()).resize(340, 240).into(Viewholder.shopImageView);
+       // Picasso.with(context).load(getDataAdapter1.getImageUrl()).resize(340, 240).into(Viewholder.shopImageView);
+
+        if(getDataAdapter1.getImageUrl()!=null){
+            Picasso.with(context).load(getDataAdapter1.getImageUrl()).resize(340, 240).into(Viewholder.shopImageView);
+        }
         //Picasso.with(context).load(urlll).resize(340, 240).into(Viewholder.shopImageView);
         if(getDataAdapter1.getLanguageType().equals("2")){
             Viewholder.txt_shopName.setTextAppearance(context, R.style.font_news_kannda_heading);

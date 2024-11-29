@@ -69,10 +69,10 @@ public class EventsHeadingViewAdapter  extends RecyclerView.Adapter<EventsHeadin
         // Viewholder.newsImageView.setImageUrl(getDataAdapter1.getImageUrl(), imageLoader1);
 
 
-        Log.e("%&&&&&&&&&&&&&&&&&&&","2222222244444444444");
+      /*  Log.e("%&&&&&&&&&&&&&&&&&&&","2222222244444444444");
         Log.e("%&&&&&&&&&&&&&&&&&&&",getDataAdapter1.getImageUrl());
         Log.e("%&&&&&&&&&&&&&&&&&&&",getDataAdapter1.getImageUrl());
-        Log.e("%&&&&&&&&&&&&&&&&&&&","2222222244444444444");
+        Log.e("%&&&&&&&&&&&&&&&&&&&","2222222244444444444");*/
 if(getDataAdapter1.getImageUrl()!=null){
     Picasso pk=getImageLoader(context);
     pk.load(getDataAdapter1.getImageUrl()).resize(340, 240).into(Viewholder.events_imageView);

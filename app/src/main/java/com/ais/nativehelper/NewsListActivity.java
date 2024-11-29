@@ -61,7 +61,7 @@ import java.util.Map;
 
 import com.ais.nativehelper.databinding.ActivityNewsListBinding;
 
-public class NewsListActivity extends BaseActivity2 {
+public class NewsListActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityNewsListBinding binding;

@@ -4,10 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <LinearLayout
-
+        android:background="@color/home_layer3_mainbtn31"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -1070,7 +1071,6 @@
 
 
 
-            //  LAYER 7AUTOMOBILES
             <LinearLayout
 
                 android:orientation="vertical"
